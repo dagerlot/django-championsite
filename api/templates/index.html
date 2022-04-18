@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>DagerEmu</title>
+    <meta name="description" content="League Of Legends troll build generator"/>
+    <meta name="keywords" content="league of legends, lol, troll, build"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    {% load static %}
+    <link rel="stylesheet" href="{%  static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+
+        </header>
+
+        <br/><br/>
+        <br/><br/>
+
+        <div id="draft">
+            <div id = "browser">
+
+                <br/>
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Champion Name">
+                <br/>
+
+                <ul type = "none" id="pick">
+                    {% for i in names %}
+                    <li><a href="{% url 'champion' champion_name=i.name %}"><img src="{{ i.get_icon }}"><br/><p>{{ i.name }}</p></a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <br/>
+
+        </div>
+        <br/><br/>
+        <footer id="footer"></footer>
+    </div>
+
+    {% load static %}
+    <script src="{% static 'js/browser.js' %}"></script>
+</body>
+
+</html>

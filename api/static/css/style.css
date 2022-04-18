@@ -1,0 +1,57 @@
+body
+{
+    margin:0px;
+    background-color: #282828;
+}
+
+
+input
+{
+    position: absolute;
+    text-align:center;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+#header
+{
+    margin-top: auto;
+    height:85px;
+    background-color: #171717;
+    border-bottom: 2px solid #060606;
+}
+
+#footer
+{
+    clear:both;
+    margin-top: auto;
+    height:116px;
+    background-color: #171717;
+    border-bottom: 2px solid #060606;
+}
+
+#draft
+{
+    background-color:#393939;
+    padding: 80px;
+    border: 1px solid #060606;
+    margin-right:8%;
+    margin-left:8%;
+}
+
+
+a
+{
+    text-decoration:none;
+    color: lightyellow;
+    text-align: center;
+}
+
+
+#pick li{
+    display: inline-block;
+    padding: 4px;
+}
+

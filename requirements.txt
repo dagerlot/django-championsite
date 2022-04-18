@@ -1,0 +1,4 @@
+django==4.0.4
+riotwatcher
+requests
+django-dotenv==1.4.2

@@ -1,0 +1,27 @@
+body
+{
+    background-color: #282828;
+}
+
+#name
+{
+    color: white;
+    text-align: center;
+}
+
+#skill
+{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.skill_img
+{
+    padding: 10px;
+}
+
+#skin
+{
+    margin-top: 10px;
+    text-align: center;
+}
